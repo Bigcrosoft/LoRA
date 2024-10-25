@@ -9,7 +9,7 @@ import torch.nn.functional as F
 import math
 from typing import Optional, List
 
-class LoRALayer():
+class LoRALayer(nn.Module):
     def __init__(
         self, 
         r: int, 
