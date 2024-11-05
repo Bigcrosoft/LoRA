@@ -22,3 +22,4 @@ def test_lora_layer():
     for name, param in model.named_parameters():
         if 'lora_' in name:
             assert param.grad is not None, "Gradient not flowing"
+            assert param.grad is not None, "Gradient not flowing"
